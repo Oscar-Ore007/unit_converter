@@ -1,13 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="index.css" rel="stylesheet">
-    <title>Unit Converter</title>
-</head>
-<body>
-    <script src="index.js"></script>
-</body>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    
+    <body onload="convLen(), convMas(), convVol()">
+        <div class="one">
+            <h2>Metric/Imperial Unit Conversion</h2>
+            <h2 id="number"></h2>
+        </div>
+        
+        <div class="two">
+            <div class="forlen">
+                <p id="length"></p>
+                <p id="len"></p>
+            </div>
+            
+            <div class="forvol">
+                <p id="volume"></p>
+                <p id="vol"></p>
+            </div>
+            
+            <div class="formas">
+                <p id="mass"></p>
+                <p id="mas"></p>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
 </html>
